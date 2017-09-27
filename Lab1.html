@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML page - Lab 1</title>
+    <style media="screen">
+    /*navigation bar */
+      .navigation{
+        background-color: #4d0000;
+        width: 100%;
+        height: 3.4375em;
+      }
+      .nav-bar-item{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .nav-bar-item li{
+        float: right;
+      }
+
+      .nav-bar-item li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        font-family: monospace;
+      }
+      .nav-bar-item li a:link{
+        text-decoration: none;
+      }
+
+      .nav-bar-item li a:visited{
+        text-decoration: none;
+      }
+
+      .nav-bar-item li a:hover{
+          color: hotpink;
+      }
+
+      .nav-bar-item li a:active{
+        color: #dfff80;
+      }
+
+      /*styles for main body */
+      h1{
+        font-family: fantasy;
+      }
+      .main-window{
+        max-width: 100%;
+        background-color: #808080;
+        margin: 2px;
+      }
+      #id-div-text1{
+        max-width: 50%;
+        height: 300px;
+        float: left;
+        margin: 15px;
+        padding: 15px;
+        border-color: #ffcccc;
+        border-width: thick;
+
+      }
+
+      #div-video{
+        max-width: 47%;
+        height: 300px;
+        float: right;
+        margin: 15px;
+        padding: 15px;
+        border: 3px solid black;
+
+      }
+
+      #id-div-text2{
+        max-width: 100%;
+        height: 15.625em;
+        margin: 10px;
+        text-align: center;
+        background-color: #ddccff;
+        border-color: #00bfff;
+        border-width: thick;
+        border-radius: 9px;
+      }
+
+      #image-text2{
+        float: left;
+        height: 13.5em;
+        margin: 8px;
+      }
+
+      #div-image{
+        max-width: 45%;
+        height: 200px;
+        float: left;
+        padding: 5px;
+        margin: 9px;
+        background-color: #e0ebeb;
+
+      }
+
+      #div-image::after{
+        clear: both;
+      }
+
+      #id-div-text3{
+        float: right;
+        max-width: 45%;
+        position: relative;
+        top: -350px;
+        left: -150px;
+        height: 250px;
+        margin: 10px;
+        padding: 20px;
+        background-color: #d98c8c;
+        border-color: #ffcccc;
+        border-width: thick;
+
+      }
+
+      /*styles for footer */
+      .footer{
+        max-width: 100%;
+        height: 90px;
+        padding: 1em;
+        color: white;
+        text-align: center;
+        background-color: black;
+
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="navigation"> <!-- navigation menu -->
+      <ul class="nav-bar-item">
+        <li><a href="#" target="_self">About Me</a></li>
+        <li><a href="https://github.com/achialandry" target="_blank">Git account</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav> <br> <!--  end navigation menu -->
+    <div class="main-window"> <!-- main window -->
+      <div id="id-div-text1" class="div-text1">
+        <h1>Welcome To my Page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      </div> <hr>
+
+      <div id="id-div-video" class="div-video">
+        <h2>My video</h2>
+        <iframe src="https://www.youtube.com/watch?v=RZLwDwG3r70"></iframe>
+      </div> <hr>
+
+      <div id="id-div-text2" class="div-text2">
+        <h3>More info</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      </div>
+
+      <div  id="id-div-image" class="div-image">
+        <h2>My Image</h2>
+        <img src="html5-css3.png" alt="My Image">
+      </div>
+
+
+      <div id="id-div-text3" class="div-text3">
+        <h2>Contact me</h2>
+
+        <label for="">First Name</label><br>
+        <input type="text" name="name" value="" placeholder="First Name"><br>
+        <label for="">Last Name</label><br>
+        <input type="text" name="name" value="" placeholder="Last Name"><br>
+        <label for="">email</label><br>
+        <input type="email" name="name" value="" placeholder="Email"><br>
+        <label for="">Message</label><br>
+        <input type="textarea" rows="10" cols="40" name="name" value="" placeholder="Message"><br>
+        <button id="btn" type="button" name="button">Submit</button><br>
+
+      </div>
+
+
+
+    </div> <hr> <!-- end main window div -->
+
+    <footer class="footer">
+
+        &copy; 2017 - Landry Achia. Coded with &hearts; by Landry
+
+    </footer>
+  </body>
+</html>
